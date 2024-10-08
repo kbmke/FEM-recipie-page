@@ -88,5 +88,34 @@ h6 {
 
   --Rose_800: hsl(332, 51%, 32%);
   --Rose_50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--Stone_100);
   font-size: 16px;
+}
+
+.card {
+  background-color: var(--White);
+  margin: 6rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 45%;
+}
+
+.hero-wrapper img {
+  /* width: 75%; */
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.prep {
+  background-color: var(--Rose_50);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: young-serif;
+}
+
+.header2 {
+  color: var(--Rose_800);
 }
