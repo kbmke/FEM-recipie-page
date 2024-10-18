@@ -1,3 +1,7 @@
+/** @format */
+@import url(/assets/fonts/young-serif/OFL.txt);
+/* @import url(/assets/fonts/outfit/OFL.txt); */
+@import url(/assets/fonts/Outfit-VariableFont_wght.ttf);
 /**
  * <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
  * // page reset
@@ -93,6 +97,7 @@ h6 {
 body {
   background-color: var(--Stone_100);
   font-size: 16px;
+  font-family: "Outfit", sans-serif;
 }
 
 .card {
@@ -109,13 +114,36 @@ body {
   margin: 0 auto;
 }
 
+.header1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+}
+
+.about {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
 .prep {
   background-color: var(--Rose_50);
   border-radius: 1rem;
   padding: 1rem;
-  font-family: young-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .header2 {
+  color: var(--Rose_800);
+}
+
+.ingredients h1,
+.instructions h1,
+.nutrition h1 {
+  font-family: "Young Serif", serif;
+  color: var(--Rose_800);
+}
+
+.instructions li {
   color: var(--Rose_800);
 }
