@@ -145,5 +145,14 @@ body {
 }
 
 .instructions li {
+  color: var(--Stone_900);
+}
+
+ol li::marker {
   color: var(--Rose_800);
+}
+
+.nutrition h2 {
+  font-size: 1rem;
+  font-weight: normal;
 }
