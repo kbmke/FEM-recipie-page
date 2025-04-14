@@ -16,15 +16,16 @@
 
     <title>Frontend Mentor | Recipe page</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+<!-- link stylesheet -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<!-- young serif font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!-- outfit font family -->
+
   </head>
   <body>
     <div class="card">
@@ -32,27 +33,34 @@
         <img
           src="/assets/images/image-omelette.jpeg"
           alt="picture of an omelette on a white plate"
+          class="mobile-hero"
+        />
+         <img
+          src="/assets/images/image-omelette.jpeg"
+          alt="picture of an omelette on a white plate"
           class="hero"
         />
       </div>
-      <section class="description">
-        <h1 class="header1">Simple Omelette Recipe</h1>
-        <h2 class="about">
+      <div class="mobile-card">
+ <section class="about">
+        <h1 class="recipe-name">Simple Omelette Recipe</h1>
+        <p class="recipe-description">
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
-        </h2>
-      </section>
-      <section class="prep">
-        <h1 class="header2">Preparation time</h1>
+        </p>
+       </section>
+        <section class="prep">
+        <h1 class="prep-header">Preparation time</h1>
         <ul>
-          <li><b>Total:</b> Approximately 10 minutes</li>
-          <li><b>Preparation:</b> 5 minutes</li>
-          <li><b>Cooking:</b> 5 minutes</li>
+          <li class="prep-list"><b>Total:</b> Approximately 10 minutes</li>
+          <li class="prep-list"><b>Preparation:</b> 5 minutes</li>
+          <li class="prep-list"><b>Cooking:</b> 5 minutes</li>
         </ul>
-      </section>
+      </section> 
+  
       <section class="ingredients">
-        <h1>Ingredients</h1>
+        <h1 class="ingredients-header">Ingredients</h1>
         <ul>
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
@@ -65,7 +73,7 @@
       </section>
       <hr />
       <section class="instructions">
-        <h1>Instructions</h1>
+        <h1 class="instrudtions-header">Instructions</h1>
         <ol>
           <li>
             <b>Beat the eggs:</b>In a bowl, beat the eggs with a pinch of salt
@@ -98,7 +106,6 @@
       </section>
       <hr />
       <section class="nutrition">
-        <h1>Nutrition</h1>
         <h2>
           The table below shows nutritional values per serving without the
           additional fillings.
@@ -145,8 +152,8 @@
         </table>
       </section>
     </div>
-
-    <div class="attribution">
+      </div>
+         <div class="attribution">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"

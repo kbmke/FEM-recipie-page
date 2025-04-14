@@ -1,116 +1,96 @@
 /** @format */
-@import url(/assets/fonts/young-serif/OFL.txt);
-/* @import url(/assets/fonts/outfit/OFL.txt); */
-@import url(/assets/fonts/Outfit-VariableFont_wght.ttf);
-/**
- * <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
- * // page reset
- *
- * @format
- */
-
-/*
-
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/*
-  2. Remove default margin
-*/
+/* page reset */
 
 * {
   margin: 0;
-}
-
-/*
-  3. Allow percentage-based heights in the application
-*/
-html,
-body {
-  height: 100%;
-}
-
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/*
-  6. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/*
-  7. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/*
-  8. Avoid text overflows
-*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
   --White: hsl(0, 0%, 100%);
-
   --Stone_100: hsl(30, 54%, 90%);
   --Stone_150: hsl(30, 18%, 87%);
   --Stone_600: hsl(30, 10%, 34%);
   --Stone_900: hsl(24, 5%, 18%);
-
   --Brown_800: hsl(14, 45%, 36%);
-
   --Rose_800: hsl(332, 51%, 32%);
   --Rose_50: hsl(330, 100%, 98%);
 }
-
+/* @media only screen and (min-width: 375px) { */
+/* CHANGES SETTINGS AT 375px SCREEN SIZE */
 body {
-  background-color: var(--Stone_100);
+  width: 100vw;
+  height: 100vh;
   font-size: 16px;
+}
+.hero-wrapper img {
+  width: 100vw;
+}
+.hero {
+  display: none;
+}
+.mobile-card {
+  margin: 1rem;
+}
+/* .about {
+  margin: 1rem;
+} */
+.recipe-name {
+  font-size: 1rem;
+  font-family: "Young Serif", serif;
+  /* margin: 1rem auto; */
+  color: var(--Stone_900);
+}
+.recipe-description {
   font-family: "Outfit", sans-serif;
+  /* margin: 1rem auto; */
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  /* font-weight: 400; */
+  color: var(--Stone_600);
 }
 
-.card {
+.prep {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--Rose_50);
+}
+.prep-header {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  color: var(--Rose_800);
+}
+
+.prep ul {
+  margin: 1.5rem;
+}
+.prep-list {
+  font-size: 1rem;
+}
+
+.ingredients-header {
+  font-family: "Young Serif", serif;
+}
+@media only screen and (min-width: 744px) {
+  /*ABOVE CHANGES SETTINGS AT 744px SCREEN SIZE*/
+}
+
+/* .card {
   background-color: var(--White);
   margin: 6rem auto;
   padding: 2rem;
   border-radius: 1rem;
   width: 45%;
-}
+} */
 
-.hero-wrapper img {
-  /* width: 75%; */
-  border-radius: 1rem;
+/* .hero-wrapper img { */
+/* width: 75%; */
+/* border-radius: 1rem;
   margin: 0 auto;
 }
 
@@ -155,4 +135,4 @@ ol li::marker {
 .nutrition h2 {
   font-size: 1rem;
   font-weight: normal;
-}
+} */
